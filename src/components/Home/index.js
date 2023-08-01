@@ -1,8 +1,5 @@
 // Home.js
 
-// Home.js
-
-// Home.js
 
 import React from 'react';
 import { useState } from 'react';
@@ -72,26 +69,6 @@ const testimonialsData = [
 ];
 
 
-const Header = () => {
-  const [isNavbarActive, setNavbarActive] = useState(false);
-
-  const toggleNavbar = () => {
-    setNavbarActive(!isNavbarActive);
-  };
-
-  return (
-    <div className="navbar ">
-      <div className="navbar-logo">PostIt</div>
-      <div className={`navbar-menu ${isNavbarActive ? 'active' : ''}`}>
-        <a href="#dashboards">Testimonials</a>
-        <a href="#contact">Contact Us</a>
-      </div>
-      <div className="navbar-toggle" onClick={toggleNavbar}>
-        &#9776; {/* Hamburger icon */}
-      </div>
-    </div>
-  );
-};
 
 const Home = () => {
   return (
