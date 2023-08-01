@@ -1,51 +1,232 @@
+/* Home.css */
 
-.job-posting-page {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+/* Home.css */
+/* ... existing styles ... */
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-h2 {
-  margin-bottom: 20px;
+/* Home.css */
+.home {
+  color: #fff;
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+.gradient-background {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 40px;
 }
 
-div {
-  margin-bottom: 15px;
+.gradient-background h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-label {
-  font-weight: bold;
+.gradient-background p {
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-textarea {
-  resize: vertical;
-}
-
-button {
+.post-job-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #ff9800;
   color: #fff;
+  font-size: 18px;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.post-job-button:hover {
+  background-color: #ffac33;
+}
+
+
+
+.contact-form {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: black;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #3a3fb8;
+}
+/* Home.css */
+/* ... existing styles ... */
+
+.testimonials {
+  text-align: center;
+  margin: 40px auto;
+  color: black;
+}
+
+.testimonials h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+}
+
+.testimonial {
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.testimonial-content {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.testimonial-company {
+  font-size: 12px;
+  color: #666;
+}
+/* Home.css */
+/* ... existing styles ... */
+
+.candidate-profiles {
+  text-align: center;
+  margin: 40px auto;
+  color: black;
+}
+
+.candidate-profiles h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile {
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  background-color: #7275b8;
+  color: white;
+}
+
+.profile h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.div{
+  color: black;
+  margin-bottom: 20vh;
+}
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar.active .navbar-menu {
+    display: flex;
+  }
 }
